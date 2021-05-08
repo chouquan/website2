@@ -1,1 +1,52 @@
 
+
+<html>
+
+    <head>
+    <meta charset="UTF-8" />
+    <title>highcharts图表测试</title>
+    <!--应该是从网上获取
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+    -->
+    <!--本地导入Jquery框架，记得放上面-->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>    
+    <!--本地导入highcharts-->
+    <script type="text/javascript" src="js/highcharts.js"></script>    
+</head>
+    <body>
+        <!--//图表的容器，设置id,图表高度和宽度-->
+    <div id="container_line" style="width: 600px; height: 400px; margin: 0 auto"></div>
+
+   <script type='text/javascript'>
+
+   //图表设置
+   var options={
+        //指定图表类型
+        chart:{
+        type:"pie"//类型是饼图
+       },
+
+       //指定主标题
+       title:{
+           text:"2018网站浏览比例"
+       },
+       
+       //设置数据列
+       series:[{
+           name:"浏览器访问量占比",//数据名称
+           data:[
+           ["google",50],
+           ["ie",20],
+           ["chrome",15],
+           ["baidu",15]
+        ]}],
+
+   }
+
+    //用函数选择以上设置
+    $("#container_line").highcharts(options);
+
+    </script>
+    </body>
+    </html>
