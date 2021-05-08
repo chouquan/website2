@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--head中的style，为统一的p元素设置样式，只对该当前网页生效-->
+    <!--外部样式表，设置多个网页页面的统一样式-->
+    <!--<link rel="stylesheet" href='./style.css'>-->
+    <!--引用外部样式，可以使用到浏览器的缓存机制，速度会比较快-->
+    <style>
+        /*css中的注释*/
+        /*会被浏览器自动忽视:
+         选择器，算则所有P元素
+         生命是一个名值对结构，
+         一个样式名对应一个样式值，
+         名和值之间以分号连接*/
+
+
+        /*p{
+            color:red;
+            font-size:40px;
+        }
+        h1{
+            color:purple;
+            font-size:60px;
+        }/*
+
+        /*希望将某一句设为红色，其他不变*/
+        /*id选择器，根据元素id属性值，选中一个元素*/
+        /*class是一个标签的属性，和id类似，可以重复使用*/
+        .lei{color:purple}
+        .hehe{font-size:50px}
+        /* *作为统配选择器，选择所有*/
+        div.hong{
+            font-size:100px;
+        }
+        /*交集选择器，必须使用元素选择器开头，div.xxx*/
+        /*同时选择多个选择器*/
+        /*h1,span{
+            color:purple
+        }*/
+        .box1{
+            width:200px;
+            height:200px;
+            background-color:orange；
+        }
+        .box2{
+            width:50%；
+            height:50%；
+            background-color:aqua；
+        }
+    </style>
+
+</head>
+<body>
+    <div class='box1'></div>
+    <div class='box2'></div>
+    <!--结构(HTML)
+        表现(CSS)层叠样式表
+        行为(Javascript)-->
+
+    <!--标签内部style属性设置元素样式-->
+
+    <p class='lei hehe'>少小离家老大回，乡音无改鬓毛衰</p>
+    <br><br>
+    <p class='lei'>哈哈哈哈哈，哈哈哈哈哈</p>
+    <br><br>
+    <div class='hong'>我是谁</div>
+</body>
+</html>
