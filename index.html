@@ -1,52 +1,134 @@
-
-
+<!DOCTYPE html>
 <html>
 
-    <head>
-    <meta charset="UTF-8" />
-    <title>highcharts图表测试</title>
-    <!--应该是从网上获取
-        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-    -->
-    <!--本地导入Jquery框架，记得放上面-->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>    
-    <!--本地导入highcharts-->
-    <script type="text/javascript" src="js/highcharts.js"></script>    
+<head>
+     <meta charset="utf-8"><!--设置字符编码-->
+     <meta name='description' content='Homepage'>
+     <meta name='author' content='X-men'>
+     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+     <link rel='stylesheet' type='text/css' href="style.css">
+
+
+<style>
+
+  /*标题字体css*/
+  .ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+  text-align:center
+}
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+  font-family:"Bradley Hand ITC";
+  color:#46B29A;
+  font-weight:bold;
+}
+
+
+/*网页背景设置*/
+#web_bg{
+  /*固定在最上方和最左方*/
+  background-size: 100%;
+  position:fixed;
+  top: 0;
+  left: 0;
+  /*整个div跟屏幕实现一模一样的大小*/
+  width:100%;
+  height:100%;
+  min-width: 1000px;
+  /*div在HTML页面中各个层级的下方*/
+  z-index:-10;
+  zoom: 1;
+  background-color: #fff;
+  /*背景不要重复*/
+  background-repeat: no-repeat;
+  /*图片随屏幕大小同步缩放*/
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  /*居中，左对齐*/
+  background-position: center 0;
+}
+
+
+.gif { display: inline; }
+</style>
 </head>
-    <body>
-        <!--//图表的容器，设置id,图表高度和宽度-->
-    <div id="container_line" style="width: 600px; height: 400px; margin: 0 auto"></div>
 
-   <script type='text/javascript'>
 
-   //图表设置
-   var options={
-        //指定图表类型
-        chart:{
-        type:"pie"//类型是饼图
-       },
 
-       //指定主标题
-       title:{
-           text:"2018网站浏览比例"
-       },
-       
-       //设置数据列
-       series:[{
-           name:"浏览器访问量占比",//数据名称
-           data:[
-           ["google",50],
-           ["ie",20],
-           ["chrome",15],
-           ["baidu",15]
-        ]}],
 
-   }
+<body id='home'>
 
-    //用函数选择以上设置
-    $("#container_line").highcharts(options);
+    <!-- 网页标题设置 -->
+    <h1 class="ml6">
+      <span class="text-wrapper">
+        <!--标题名称-->
+        <span class="letters">Let's cycling safely in London !</span>
+      </span>
+    </h1>
 
+
+    <!-- 网页背景图片 -->
+    <div id="web_bg" style="background-image: url('imgpart1/background_new.png');"></div>
+    
+
+    <!-- 字体动画设置，复制的案例 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+    var textWrapper = document.querySelector('.ml6 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    anime.timeline({loop: true})
+    .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
     </script>
-    </body>
-    </html>
+
+
+
+   <!-- 3个按钮 -->
+   <div style="width: 100%;height: 100p;text-align:center;">
+    <button style="width:100px;height:36px;color: #F6A09F;font-family:Bradley Hand ITC;
+    font-weight:bold;font-size:30px;border:none;background:none">Story</button>
+    <button style="width:100px;height:36px;color: #F6A09F;font-family:Bradley Hand ITC;
+    font-weight:bold;font-size:30px;border:none;background:none">Map</button>
+    <button style="width:100px;height:36px;color: #F6A09F;font-family:Bradley Hand ITC;
+    font-weight:bold;font-size:30px;border:none;background:none">About</button>
+  </div>
+
+
+
+   <!-- 3个gif图片 -->
+   <div class="gif" style="width:1200px">
+    <img src="imgpart1/bike.gif" width="250px"/>
+    <img src="imgpart1/bike.gif" width="250px"/>
+    <img src="imgpart1/bike.gif" width="250px"/>
+   </div>
+
+
+
+</body>
+
+
+
+</html>
