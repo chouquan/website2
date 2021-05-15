@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--引入bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!--引入bootstrap对应js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--引入css-->
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+
+    
+    <!--引入fullpages对应js-->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/myfullpagejs_team.js"></script>
+
+
+
+    <!--样式设置-->
+    <!--样式设置-->
+    <!--样式设置-->
+    <style>
+    /*设置第一页标题样式*/
+    .container .row h1 {
+        font-size: 80px;
+        font-family: "Arial";
+        color: #7EC8BC;
+        text-align: center; 
+        margin-top:5%;
+        background-color:#ffffff;
+        
+}
+
+
+    /*设置段落样式*/
+    #description1 {
+        font-size: 20px;
+        font-family: "Arial";
+        color: #ffffff;
+        margin-top:10%;
+        text-align: justify;
+}
+
+    /*设置第二页标题样式*/
+    .container .row h3 {
+        font-size: 45px;
+        font-family:"Bradley Hand ITC";
+        color: #46B29A;
+        text-align: center; 
+        font-weight:bold;
+        font-style: italic;
+        
+}
+
+    /*图片大小设置*/
+    #imgyj img,#imgzq img,#imghs img,#imgzj img,#imgzqf img {
+        height:250px;
+        
+       }
+
+
+    /*名字样式设置*/
+    #nameyj p,#namezq p,#namehs p,#namezj p,#namezqf p {
+        font-size: 18px;
+        font-family: "Arial";
+        color: #46B29A;
+        text-align: right;
+        
+}
+
+
+    /*导航设置*/
+    #menu {
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+    z-index:1000;
+
+}
+
+    #menu li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size:20px;
+
+}
+
+    #menu li a {
+    display:block;
+    width:100px;
+    height:40px;
+    text-align:center;
+    line-height:30px;
+    color:rgba(255,255,255,0.7);
+    font-style:italic;
+
+}
+
+
+    /*右侧小圆点颜色*/
+    #fp-nav ul li a span {
+    background:#ffffff;
+}
+
+    /*设置第二屏背景*/
+    #fullpage .section:nth-child(2){
+    background:url(./imgpart1/background_team.png) no-repeat;
+    height:100%;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+
+}
+
+    </style>
+
+</head>
+
+
+
+
+
+<body >
+
+    <!--导航设置-->
+    <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Team</a></li>
+    </ul>
+
+
+    <div id='fullpage'>
+        <div class="section">
+            <!--第一屏-->
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-8 m-auto">
+                        <h1 class="Title"> Team </h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 m-auto">
+                        <p>   </p>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 m-auto" id="description1">
+                        <p class="text">We are a group of urban data analysts from the Centre for Advanced Spatial Analysis of University College London. We have never met because of the coronavirus pandemic. But this does not hinder the close communication between us , and our pursuit and exploration of urban data science. We hope that this research will help realize London’s vision of the world’s best big city for cycling. We also hope that of the coronavirus pandemic will end as soon as possible and that we can meet in London and start a green and free journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+        <!--第二屏-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="Title2">Looking forward to meeting in London for cycling &nbsp;！</h3>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    
+                    <div class="col-md-1" >
+                        <div class="kong">
+                                 <p></p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-2">
+                        <div id="imgyj">
+                            <img src="imgpart1/hyj2.png">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-2">
+                        <div id="imgzq">
+                            <img src="imgpart1/zq.png">
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-2">
+                        <div id="imghs">
+                            <img src="imgpart1/hs.png">
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div id="imgzj">
+                            <img src="imgpart1/zhengjie.png">
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-2">
+                        <div id="imgzqf">
+                            <img src="imgpart1/zqf.png">
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-1" >
+                        <div class="kong">
+                                 <p></p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-1" >
+                        <div class="kong">
+                                 <p></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" >
+                        <div id="nameyj">
+                            <a href='mailto:ucfnqzh@ucl.ac.uk'>
+                                 <p>Yijie Huang</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-2">
+                        <div id="namezq">
+                            <a href='mailto:ucfnqzh@ucl.ac.uk'>
+                                <p>Quan Zhou</p>
+                            </a>
+                        </div>
+                    </div>
+
+                
+
+                    <div class="col-md-2  ml-3">
+                        <div id="namehs">
+                            <a href='mailto:ucfnqzh@ucl.ac.uk'>
+                                <p>Hongsheng Liu</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div id="namezj">
+                            <a href='mailto:ucfnqzh@ucl.ac.uk'>
+                                <p>Jie Zheng</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 ml-1">
+                        <div id="namezqf">
+                            <a href='mailto:ucfnqzh@ucl.ac.uk'>
+                                <p>Qingfeng Zhang</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1" >
+                        <div class="kong">
+                                 <p></p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p> </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p> </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+     
+</body>
+</html>

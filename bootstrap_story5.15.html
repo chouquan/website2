@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--引入bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!--引入bootstrap对应js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--highchart本地导入Jquery框架，记得放上面-->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>    
+
+    <!--highchart图风格-->
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <script src="https://code.highcharts.com.cn/highcharts/highcharts.js"></script>
+    <script src="https://code.highcharts.com.cn/highcharts/modules/oldie.js"></script>
+
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/myfullpagejs_story.js"></script>
+    <!-- <link rel="stylesheet" href="./css/style3.css"> -->
+
+
+    <!--样式设置-->
+    <!--样式设置-->
+    <!--样式设置-->
+    <style>
+
+    /*设置第一页背景*/
+    #fullpage .section:nth-child(1){
+    background:url(./imgpart1/background_team.png) no-repeat;
+    height:100%;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+
+}
+
+    /*设置第二页背景*/
+    #fullpage .section:nth-child(2){
+    background:url(./imgpart1/background_team.png) no-repeat;
+    height:100%;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+
+}
+
+
+    /*设置第一页标题样式*/
+    .container .row h1 {
+        font-size: 45px;
+        font-family:"Bradley Hand ITC";
+        color: #46B29A;
+        text-align: center; 
+        font-weight: bold;
+        font-style: italic;    
+}
+
+    /*设置标题样式*/
+    .container .row h2 {
+        font-size: 45px;
+        font-family:"Arial";
+        color: #ffffff;
+        text-align: center; 
+        margin-top:5%;
+        font-weight:bold;
+        
+}
+
+    .container .row h3 {
+        font-size: 30px;
+        font-family:"Arial";
+        color: #81CDBD;
+        text-align: center; 
+        font-style: italic;
+        margin-bottom: 50px;
+    }
+
+    #Title9_2 {
+        font-size: 30px;
+        font-family:"Arial";
+        color: #ffffff;
+        text-align: center; 
+        font-style: italic;
+    }
+
+
+    #Title12, #Title13, #Title14, #Title15, #Title16 {
+        font-size: 45px;
+        font-family:"Arial";
+        color: #64B09B;
+        text-align: center; 
+        margin-top:5%;
+        font-weight:bold;
+
+    }
+    
+
+    /*设置段落样式*/
+    #question1 p,#question2 p,#question3 p {
+    font-size: 22px;
+    font-family: "Futura, sans-serif";
+    color: #595959;
+    font-style:italic;
+
+}
+
+    #letsgo p {
+    font-size: 40px;
+    font-family: "Bradley Hand ITC";
+    color: #46B29A;
+    font-weight: bold;
+    font-style: italic;   
+}
+
+
+    #description1_1 p{
+    font-size: 20px;
+    font-family: "Futura, sans-serif";
+    color: #595959;
+    text-align:justify;
+
+    }
+
+
+    .text2 p{
+    font-size: 20px;
+    text-align:justify;
+    color: #595959;
+    font-family:"Futura, sans-serif";
+
+    }
+
+    .text3 p{
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+
+    }
+
+    #text3, #text4 {
+
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+    width:500px;
+    } 
+
+    #text4_1 {
+    /*需要替换研究方法*/
+    /*需要替换研究方法*/
+    /*需要替换研究方法*/
+
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+
+    }
+
+
+
+
+    #text5,#text12,#text13,#text14,#text15, #text16  {
+    font-size: 20px;
+    text-align:justify;
+    color: #595959;
+    font-family:"Futura, sans-serif";
+} 
+
+    #text6,#text9,#text11 {
+
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+
+} 
+
+
+    #text7 {
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+    margin-top:5%;
+
+    }
+
+    #text10 {
+
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+    margin-top:3%;
+
+} 
+
+    
+
+
+
+    #picture1name {
+    font-size: 13px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:25%;
+        
+    }
+
+    #picture2name {
+    font-size: 15px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:25%;
+        
+    }
+
+    #picture3name {
+    font-size: 15px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:30%;
+        
+    }
+
+
+
+    #picture4name {
+    font-size: 15px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:30%;
+        
+    }
+
+    #picture5name {
+    font-size: 15px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:35%;
+        
+    }
+
+    #cluster0name, #cluster1name, #cluster2name, #cluster3name, #cluster4name {
+    font-size: 15px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:35%;
+        
+    }
+
+
+    #text81,#text82 {
+
+    font-size: 40px;
+    color: #81CDBD;
+    font-family:"Arial";
+    font-style: bold;
+    margin-top:5px;
+    font-style: italic;
+
+} 
+
+
+    #accident,#signal,#distribution,#policy {
+    font-size: 18px;
+    text-align:center;
+    color: #333;
+    font-family:"Futura, sans-serif";
+}
+
+
+
+    /*图片大小设置*/
+
+    #NHS img{
+        height:400px;
+
+    }
+
+    #three-people img{
+        height:200px;
+
+    }
+
+    #MSOA img{
+        height:500px;
+        float:left;
+
+    }
+
+    #picture1 img, #picture3 img {
+        width: 480px;
+
+    }
+
+    #signal1 img,#signal2 img, #signal3 img, #signal4 img,
+    #signal5 img,#signal6 img, #signal7 img, #signal8 img {
+        height:200px;
+    }
+
+    #namesignal1 p,#namesignal2 p, #namesignal3 p, #namesignal4 p,
+    #namesignal5 p,#namesignal6 p, #namesignal7 p, #namesignal8 p {
+        font-size: 20px;
+        color: #333;
+        font-family:"Futura, sans-serif";
+        text-align: center;
+    }
+    #namesignal1,#namesignal2, #namesignal3, #namesignal4,
+    #namesignal5,#namesignal6, #namesignal7, #namesignal8{
+        width: 100%;
+    }
+    .p8 .imgBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    #casualties_auto img {
+        width: 100%;
+
+    }
+
+    #Correlation_Matrix img {
+        width:100%;
+
+    }
+
+
+    #cluster img, #cluster0 img, #cluster1 img, #cluster2 img, #cluster3 img, #cluster4 img  {
+        width:90%;
+
+    }
+
+
+    #cluster_detail1 img, #cluster_detail2 img, #cluster_detail3 img {
+        width:100%;
+        margin-top:2%;
+        margin-bottom: 3%;
+
+    }
+
+
+    .p2 .row h2,.p4 .row h2,.p5 .row h2,.p8 .row h2,.p7 .row h2,.p10 .row h2{
+        color: #64b09b;
+    }
+    .p2 .text2{
+        color: #333333;
+        font-size: 25px;
+        text-align:justify;
+        font-family:"Futura, sans-serif";
+        width:600px;
+        margin-left:10%;
+    }
+    .p2 .title2,.p3 .title3{
+        margin-bottom: 40px;
+    }
+
+    .imgRow{
+        margin-bottom: 60px;
+    }
+    .texBox{
+        text-align: center;
+        color: #333333;
+    }
+    #text7,#text10{
+        color: #333333;
+    }
+
+    
+/*初始设置*/
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+a {
+    text-decoration:none;
+}
+
+li{
+    list-style:none;
+}
+
+em,i{
+    font-style:normal;
+}
+
+#fullpage .section{
+    background-size:cover;
+}
+
+
+/*箭头*/
+
+
+
+
+/*小圆点颜色*/
+#fp-nav ul li a span {
+    background:#ffffff;
+}
+
+
+/*菜单设置*/
+#menu {
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+    z-index:1000;
+
+}
+
+#menu li {
+    margin-bottom: 10px;
+    font-size:20px;
+
+}
+
+#menu li a {
+    display:block;
+    width:100px;
+    height:40px;
+    text-align:center;
+    line-height:30px;
+    color:rgba(255,255,255,0.7);
+    font-style:italic;
+
+}
+
+
+    </style>
+
+</head>
+
+
+
+
+
+<body >
+
+    
+    <!--导航设置-->
+    <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Story</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Team</a></li>
+    </ul>
+
+
+    <div id='fullpage'>
+     <!--第一屏-->
+    <div class="section">
+    <div class="p1">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 m-auto">
+                     <h1 class="Title1"> Making London the world’s best big city for cycling ！ </h1>
+                </div>
+            </div>
+
+
+        <div class="row">
+            <div class="col-md-12 m-auto text-center" id="question1">
+                <p class="text1" >
+                    Have you ever cycled in London?
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 m-auto text-center" id="question2">
+                <p class="text1" >
+                    Have you ever worried that it is not safe to ride a bicycle?
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 m-auto text-center" id="question3">
+                <p class="text1">
+                    Are you like us, looking forward to riding freely on the streets and admiring the scenery on the roadside?
+
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 m-auto text-center" id="letsgo">
+                <p class="text1">
+                    Let’s go!
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+     <!--第1.1屏-->
+     <div class="section">
+        <div class="p1.1">
+    
+            <div class="container">
+    
+                <div class="row">
+                    <div class="col-md-12 m-auto">
+                         <h1 class="Title1"> Making London the world’s best big city for cycling ！ </h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p >
+                        </p>
+                    </div>
+                </div>
+    
+            <div class="row">
+                <div class="col-md-1" >
+                    <p ></p>
+                </div>
+
+                <div class="col-md-10 m-auto text-center" id="description1_1">
+                    <p class="text1.1">
+                        The Mayor's Transport Strategy, published in March 2018, sets out a vision for a fairer, greener, 
+                         healthier and more prosperous London. This includes making cycling appealing to many more people, 
+                         and ensuring that London's streets are safe and accessible for everyone who wants to cycle.
+                    </p>
+                </div>
+
+                <div class="col-md-1" >
+                    <p ></p>
+                </div>
+
+
+
+            </div>
+    
+        </div>
+        </div>
+        </div>
+
+
+     <!--第二屏-->
+     <div class="section">
+     <div class="p2">
+         <div class="container">
+
+            <div class="row title2">
+                <div class="col-md-12">
+                    <h2 class="Title2">The cycling boom under the coronavirus pandemic!</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div id="NHS">
+                         <img src="imgpart1/NHS.png">
+                    </div>   
+                </div>
+
+
+
+                <div class="col-md-8 m-auto">
+                    <div class="text2">
+                        <p>Data released by Transport for London shows that since the began of the coronavirus pandemic, 
+                            there has been a significant increase in walking and cycling activities in the UK. 
+                            After the first national lockdown in March 2020, people's travel habits have changed significantly, 
+                            from 29 percent between January and March 2020 to an estimated 46 percent between April to June 2020 
+                            (Travel in London 2020).
+
+                        </p>
+                    </div>
+
+                    <div class="text2">
+                        <p>Beside, facing traffic congestion in big cities, environmental pollution caused by automobile exhaust,
+                             and the further expansion of urban planning (housing is getting farther and farther from subway stations),
+                              bicycles are undoubtedly a beneficial solution. Bicycles have become a trend again. This may be another 
+                              choice for us to enter the future.
+
+                        </p>
+                    </div>
+                
+                </div>   
+            </div>
+
+         </div>
+
+    </div>
+     </div>
+
+
+
+    <!--第三屏-->
+    <div class="section">
+    <div class="p3">
+        <div class="container">
+
+           <div class="row">
+               <div class="col-md-12">
+                   <h2 class="Title3">Current Chanllenge</h2>
+               </div>
+           </div>
+
+           <div class="row m-auto">
+               <div class="col-md-6">
+                   <div class="text3 mt-4">
+                       <p>Currently,unsafe is the biggest obstacle that prevents public cycling in London. According to 
+                           the Attitudes to Cycling survey(2017),more than half of Londoners who don't cycle choose not 
+                           to because they are scared of traffic.
+
+                       </p>
+                   </div>
+               </div>
+
+               <div class="col-md-1">
+                    <div >
+                        <p>
+                        </p>
+                    </div>
+              </div>
+
+
+               <div class="col-md-5 mt-3" id="three-people">
+                        <img src="imgpart1/three-people.png">
+                </div>
+            </div>
+
+
+
+
+            <div class="row m-auto">
+                <div class="col-md-6 mt-5">
+                    <div class="text3">
+                        <p>Although there has been a significant decrease in the risk of being killed or seriously injured 
+                            while cycling in London since 2000, there is a high risk when travelling by bicycle (Vision Zero
+                             action plan, TFL). In 2019, 9892 people died and were seriously injured in bicycle accidents in
+                              London. There were 1682 serious accidents.
+ 
+                        </p>
+                    </div>
+                </div>
+ 
+                <div class="col-md-6 mt-3">
+                        <!--//图表的容器，设置id,图表高度和宽度-->
+                        <div id="container_line" style="width: 500px; margin: 0 auto"></div>
+
+                 </div>
+             </div>
+
+
+
+
+
+
+
+        </div>
+   </div>
+   </div>
+
+
+    <script type='text/javascript'>
+        //图表设置
+        var options={
+            //指定图表类型
+            chart:{type: 'column',backgroundColor:null},
+            //指定标题
+            title: {
+             text: 'Risk of being killed or seriously injured while cycling in London (2000-2017)',
+             //设置字体大小
+             style:{fontSize:'13px',fontFamily:'Arial',color:"#5A5A5A",fontWeight: "blod"}
+         },
+            //副标题
+            subtitle: {
+             text: 'Data From: STATS19 Collision Data',
+             style:{fontSize:'10px',fontFamily:'Arial',color:"#5A5A5A"}
+         },
+            //设置横坐标名称
+            xAxis: {
+             categories: [
+                 '2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'
+             ],
+             labels:{
+                 style:{fontSize:'10px',fontFamily:'Arial',fontWeight: "blod",color:"#5A5A5A"}
+             }
+             //十字准星crosshair: true
+         },
+            //设置纵坐标名称
+            yAxis: {
+             min: 0,
+             title: {
+                 text: 'Risk Index',
+                 style:{fontSize: '12px',fontFamily:'Arial',fontWeight: "blod",color:"#5A5A5A"}
+             },
+             labels:{
+                 style:{fontSize:'10px',fontFamily:'Arial',color:"#5A5A5A"}
+             }
+         },
+     
+            //数据框设置
+            tooltip: {
+             //数据提示框头部格式化字符
+             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+             pointFormat:'<td style="padding:0;font-size:12px"><b>{point.y:.1f}</b></td></tr>',
+             footerFormat: '</table>',
+             shared: true,
+             useHTML: true,//显示阴影
+             valueDecimals: 2,
+             borderRadius:10,//边框圆角
+             backgroundColor:'#F2F2F2',//背景颜色
+             borderColor:'#F2F2F2', //边框颜色
+             borderWidth: 0,//边框宽度
+             style: {// 文字内容相关样式
+             color: "#000000",
+             fontSize: "12px",
+             fontWeight: "blod",
+             fontFamily: "Arial"
+         },
+         },
+         //
+     
+         plotOptions: {
+             column: {
+                 //设置柱边框
+                 borderWidth:0
+             },
+             series:{
+                 //设置柱颜色
+                 color:'#F6A09F'
+             }
+         },
+         series: [{
+             showInLegend: false,//不显示name
+             name: 'Risk Index',
+             data: [1.0, 1.1, 0.8, 0.9, 0.58, 0.65, 0.6, 0.58, 0.58, 0.6,0.6,0.65,0.7,0.55,0.53,0.4,0.38,0.35]
+         }],
+         //去掉logo
+         credits: {
+         enabled: false
+     },
+         //去掉导出按钮
+         exporting: { enabled:false }
+         }
+     
+         //用函数选择以上设置
+         $("#container_line").highcharts(options);
+    </script>
+    
+
+
+    <!--第四屏-->
+    <div class="section">
+    <div class="p4">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="Title4">How safe is cycling in London?</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                 <div class="col-md-12">
+                     <h3 class="Title41">We hope to answer four questions:</h3>
+                 </div>
+            </div>
+
+
+            <div class="row imgRow">
+                <div class="col-md-3 ">
+                    <img style="max-width: 90%;" src="imgpart1/accident.png">
+                </div>
+                <div class="col-md-3 ">
+                    <img style="max-width: 90%;" src="imgpart1/signal.png">
+                </div>
+                <div class="col-md-3 ">
+                    <img style="max-width: 90%;" src="imgpart1/distribution.png">
+                </div>
+                <div class="col-md-3 ">
+                    <img style="max-width: 90%;" src="imgpart1/policy.png">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <p id="accident">Where did the cycling accident happen?</p>
+                </div>
+                <div class="col-md-3">
+                    <p id="signal">Where are the infrastructures that help improve cycling safety？</p>
+                </div>
+                <div class="col-md-3">
+                    <p id="distribution">What are the characteristics of the spatial distribution of cycling infrastructures and cycling accident ?</p>
+                </div>
+                <div class="col-md-3">
+                    <p id="distribution">How should each district adjust its policies to provide a safer riding environment?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--需要替换-->
+    <!--需要替换-->
+    <!--需要替换-->   
+    <!--第4.1屏-->
+    <div class="section">
+        <div class="p4_1">
+            <div class="container">
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="Title4_1">Research Method</h2>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-6">
+                        <!--需要替换-->
+                        <!--需要替换-->
+                        <!--需要替换-->
+                        <div id="MSOA"><img src="imgpart1/MSOA.png" alt="msoa"></div>
+                    </div>
+    
+                     <div class="col-md-6 mt-5">
+                         <!--需要替换-->
+                         <!--需要替换-->
+                         <!--需要替换-->
+                         <p id="text4_1">This research focused on the middle layer super output area(MSOA) of London.
+                             （983个区） The MSOA was created by the Office for National Statistics and used to explore 
+                             the small areas of the city. It can make it easier for us to find problems in a smaller area.
+                             The data we used include：cycling infrastructures data (Transport for London)
+                            </p>
+
+                        <p id="text4_1">This research focused on the middle layer super output area(MSOA) of London.
+                                （983个区） The MSOA was created by the Office for National Statistics and used to explore 
+                                the small areas of the city. It can make it easier for us to find problems in a smaller area.
+                                The data we used include：cycling infrastructures data (Transport for London)
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        </div>
+    <!--需要替换-->
+    <!--需要替换-->
+    <!--需要替换-->   
+
+
+
+
+
+    <!--第五屏-->
+    <div class="section">
+    <div class="p5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="Title5">Spatial Scale and Data Source</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="MSOA"><img src="imgpart1/MSOA.png" alt="msoa"></div>
+                </div>
+
+                <div class="col-md-3">
+                    <p></p>
+                </div>
+
+                 <div class="col-md-6  mt-5">
+                     <p id="text5">This research focused on the middle layer super output area(MSOA) of London (983 districts).
+                          The MSOA was created by the Office for National Statistics and used to explore the small areas of the city. 
+                          It can make it easier for us to find problems in a smaller area.
+                     </p>
+
+                     <br>
+                     <br>
+                        <!--需要替换-->
+                        <!--需要替换-->
+                        <!--需要替换-->   
+                     <p id="text5">
+                        The data we used in the research include：cycling infrastructures data (Transport for London), 
+                        cycling accidents data (Department for Transport), the proportion of cycling to work (XXX).
+                        
+                   </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!--第六屏-->
+    <div class="section">
+    <div class="p6">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="Title6">Where do Casualties happen?</h2>
+                </div>
+            </div>
+
+            <div class="row  mt-1">
+                 <div class="col-md-12">
+                     
+                     <p id="text6">According to statistics, in 2019, the total number of casualties was 9,892, 
+                         and they mainly occurred in the centre of London. The number of casualties in the central 
+                         area was significantly higher than in the outer areas of the city. Westminster, Southwark, 
+                         Lambeth, Tower Hamlets and Wandsworth were the five districts with the most casualties.
+                        </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row">
+                        <p id="picture1name">Casulties of Bicycle Accident in London</p>
+                   </div>
+
+                    <div class="row">
+                         <div id="picture1"><img src="imgpart1/casualties_sum_NEW.png" alt="Picture1"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-7 ">
+                            <!--//图表的容器，设置id,图表高度和宽度-->
+                            <div id="container_line2" style="width:700px;height:500px"></div>
+
+    <script type='text/javascript'>
+    //图表设置
+    var options={
+        //指定图表类型
+        chart:{type: 'bar',backgroundColor: 'rgba(0,0,0,0)'},
+        //指定标题
+        title: {
+         text: 'Number of Casualties Caused by Bicycle Accidents (2019)',
+         //设置字体大小
+         style:{fontSize:'13px',fontFamily:'Futura',color:"#5A5A5A"}
+     },
+        //副标题不显示
+        subtitle: {
+         text: null
+     },
+        //设置横坐标名称
+        xAxis: {
+         categories: ['Barking and Dagenham','Barnet','Bexley','Brent','Bromley',
+                      'Camden','City of London','Croydon','Ealing','Enfield','Greenwich',
+                     'Hackney','Hammersmith and Fulham','Haringey','Harrow','Havering',
+                     'Hillingdon','Hounslow','Islington','Kensington and Chelsea','Kingston upon Thames',
+                     'Lambeth','Lewisham','Merton','Newham','Redbridge','Richmond upon Thames','Southwark',
+                     'Sutton','Tower Hamlets','Waltham Forest','Wandsworth','Westminster'],
+         //十字准星crosshair: true
+         labels:{
+             style:{fontSize:'9px',fontFamily:'Futura',color:"#5A5A5A"}
+         }
+     },
+ 
+        //设置纵坐标名称
+        yAxis: {
+         min: 0,
+         title: {
+             text: 'Casualties Number',
+             align: 'high',
+             style:{fontSize:'12px',fontFamily:'Futura',color:"#5A5A5A"}
+         },
+         labels:{
+             style:{fontSize:'10px',fontFamily:'Futura',color:"#5A5A5A"}
+         }
+     },
+ 
+     //tooltip: {
+     //   valueSuffix: ' 百万'
+     //},
+     plotOptions: {
+         bar: {
+             borderWidth:0,
+             dataLabels: {
+                 enabled: false,
+                 allowOverlap: true // 允许数据标签重叠
+             }
+         },
+                     
+     series:{
+             //设置柱颜色
+             color:'#FC6359'}
+     },
+ 
+ 
+     
+     series: [{
+         showInLegend: false,
+         data: [126, 132, 64, 156, 208,538,282,178,252,100,170,468,352,274,72,68,128,
+         258,532,340,158,672,326,172,218,126,288,786,112,632,260,552,892]
+     }],
+ 
+     //去掉logo
+     credits: {
+     enabled: false
+ },
+     //去掉导出按钮
+     exporting: { enabled:false }
+ };
+ 
+     //用函数选择以上设置
+     $("#container_line2").highcharts(options);
+                           </script>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+<!--第七屏-->
+<div class="section">
+<div class="p7">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="Title7">How safe is cycling in London?</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="Title7_2"> Bicycle Casulties</h3>
+            </div>
+        </div>
+
+        <div class="row title3">
+             <div class="col-md-6">
+                 <!--文字待替换-->
+                 <!--文字待替换-->
+                 <!--文字待替换-->
+                 <p id="text7">This research focused on the middle layer super output area(MSOA) of London.
+                     （983个区） The MSOA was created by the Office for National Statistics and used to explore 
+                     the small areas of the city. It can make it easier for us to find problems in a smaller area.
+
+                </p>
+                <br>
+                <p id="text7">
+                    the small areas of the city. It can make it easier for us to find problems in a smaller area.
+                    The data we used include：cycling infrastructures data (Transport for London), cycling accidents 
+                    data (Department for Transport), the proportion of cycling to work (XXX).
+               </p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <p id="picture2name">Casulties of Bicycle Accident in London</p>
+               </div>
+
+               <div class="row pb-5">
+                    <div id="casualties_auto">
+                         <img src="imgresult/casualties_auto_new.png" alt="casualties_auto">
+                    </div>
+                </div>
+           </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+    <!--第八屏-->
+    <div class="section">
+    <div class="p8">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="Title8">Infrastructures to Improve Cycling Safety</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                 <div class="col-md-6 text-center">
+                     <p id="text81">Lines</p>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <p id="text82">Points</p>
+               </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row imgBox">
+                        <div id="signal1">
+                             <img src="imgpart1/signal1.png">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="namesignal1"><p>Cycle Lane Track</p></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row imgBox">
+                        <div id="signal2">
+                             <img src="imgpart1/signal2.png">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="namesignal2"><p>Restricted Route</p></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="row imgBox">
+                        <div id="signal3">
+                             <img src="imgpart1/signal3.png">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="namesignal3"><p>Signals</p></div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row imgBox">
+                        <div id="signal4">
+                             <img src="imgpart1/signal4.png">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="namesignal4"><p>Traffic Calming</p></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row imgBox">
+                        <div id="signal5">
+                             <img src="imgpart1/signal5.png">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="namesignal5"><p>Advance Stop Line</p></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row imgBox">
+                        <div id="signal6">
+                             <img src="imgpart1/signal6.png">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="namesignal6"><p>Crossing</p></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="row imgBox">
+                        <div id="signal7">
+                             <img src="imgpart1/signal7.png">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="namesignal7"><p>Restricted Points</p></div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row imgBox">
+                        <div id="signal8">
+                             <img src="imgpart1/signal8.png">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="namesignal8"><p>Cycle Parking</p></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+</div>
+   
+    
+
+
+
+    <!--第九屏-->
+    <div class="section">
+    <div class="p9">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="Title9">The spatial distribution of Infrastructures</h2>
+                </div>
+            </div>
+
+
+            <div class="row mb-3">
+                 <div class="col-md-12">
+                     <p id="text9">There are 87,903 facilities that are conducive to safe riding. The overall distribution is
+                          still gradually decreasing from the center to the periphery, and the total number of infrastructures 
+                          in the local peripheral area is also large. Southwark, Hackney, Lambeth, Lewisham and Ealing are the 
+                          five districts with the largest number of infrastructers.
+                        </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row">
+                        <p id="picture3name">Bicyle Infrastructures in London</p>
+                   </div>
+
+                    <div class="row">
+                         <div id="picture3"><img src="imgpart1/infrastructure_num_NEW.png" alt="Picture3"></div>
+                    </div>
+                </div>
+
+                <!--highchart图表，太长太长，隐藏-->
+                <!--highchart图表，太长太长，隐藏-->
+                <!--highchart图表，太长太长，隐藏-->
+                <!--highchart图表，太长太长，隐藏-->
+                <div class="col-md-7">
+                            
+                <!--//图表的容器，设置id,图表高度和宽度-->
+                   <div id="container_line3" style="width:700px;height:500px"></div>
+
+<script type='text/javascript'>
+//图表设置
+var options={
+    //指定图表类型
+    chart:{type: 'bar',backgroundColor: 'rgba(0,0,0,0)'},
+    //指定标题
+    title: {
+     text: 'Number of Infrastructures (2020)',
+     //设置字体大小
+     style:{fontSize:'13px',fontFamily:'Futura',color:"#5A5A5A"}
+ },
+    //副标题不显示
+    subtitle: {
+     text: null
+ },
+    //设置横坐标名称
+    xAxis: {
+     categories: ['Barking and Dagenham','Barnet','Bexley','Brent','Bromley',
+                  'Camden','City of London','Croydon','Ealing','Enfield','Greenwich',
+                 'Hackney','Hammersmith and Fulham','Haringey','Harrow','Havering',
+                 'Hillingdon','Hounslow','Islington','Kensington and Chelsea','Kingston upon Thames',
+                 'Lambeth','Lewisham','Merton','Newham','Redbridge','Richmond upon Thames','Southwark',
+                 'Sutton','Tower Hamlets','Waltham Forest','Wandsworth','Westminster'],
+     //十字准星crosshair: true
+     labels:{
+         style:{fontSize:'9px',fontFamily:'Futura',color:"#5A5A5A"}
+     }
+ },
+
+    //设置纵坐标名称
+    yAxis: {
+     min: 0,
+     title: {
+         text: 'Infrastructure Number',
+         align: 'high',
+         style:{fontSize:'12px',fontFamily:'Futura',color:"#5A5A5A"}
+     },
+     labels:{
+         style:{fontSize:'9px',fontFamily:'Futura',color:"#5A5A5A"}
+     }
+ },
+
+ //tooltip: {
+ //   valueSuffix: ' 百万'
+ //},
+ plotOptions: {
+     bar: {
+         borderWidth:0,
+         dataLabels: {
+             enabled: false,
+             allowOverlap: true // 允许数据标签重叠
+         }
+     },
+                 
+ series:{
+         //设置柱颜色
+         color:' #FC598D'}
+ },
+
+
+ 
+ series: [{
+     showInLegend: false,
+     data: [1924, 813, 1219, 3529, 1180,3596,681,2764,4056,1974,3368,5472,2975,2886,1699,
+     1389,1359,2240,3563,1678,1783,4811,4253,1917,3927,1630,1572,5432,1766,3364,3365,3040,2679]
+ }],
+
+ //去掉logo
+ credits: {
+ enabled: false
+},
+ //去掉导出按钮
+ exporting: { enabled:false }
+};
+
+ //用函数选择以上设置
+ $("#container_line3").highcharts(options);
+
+ </script>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    
+
+
+    
+    <!--第十屏-->
+    <div class="section">
+        <div class="p10">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="Title10">Variable for Cluster Analysis</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                <!--待替换-->
+                <!--待替换-->
+                <!--待替换-->
+                <!--待替换-->
+                     <div class="col-md-6 mt-5">
+                        <p id="text10">This research focused on the middle layer super output area(MSOA) of London.
+                     （983个区） The MSOA was created by the Office for National Statistics and used to explore 
+                     the small areas of the city.
+                        </p>
+                        <br>
+
+                         <p id="text10">This research focused on the middle layer super output area(MSOA) of London.
+                        （983个区） The MSOA was created by the Office for National Statistics and used to explore 
+                        the small areas of the city.
+                        </p>
+                     </div>
+
+
+
+                     <div class="col-md-6">
+                         <div class="row mt-3 pl-5">
+                             <p id="picture4name">Correlation Matrix</p>
+                         </div>
+
+                         <div class="row mb-3">
+                             <div id="Correlation_Matrix">
+                                 <img src="imgresult/Correlation_Matrix_NEW.png" alt="Correlation_Matrix">
+                             </div>
+                         </div>
+                     </div>
+                </div>
+           </div>
+
+        </div>
+        </div>
+
+
+
+
+
+
+    <!--第11屏-->
+    <div class="section">
+    <div class="p11">
+        <div class="container">
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="Title11">Result for Cluster Analysis</h2>
+                    </div>
+                </div>
+    
+                <div class="row">
+
+
+
+
+                    <div class="col-md-7">
+                        <div class="row mt-3">
+                            <p id="picture5name">K-means Result (k=5)</p>
+                       </div>
+
+                       <div class="row">
+                            <div id="cluster">
+                                 <img src="imgresult/cluster_NEW.png" alt="cluster">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 mt-5">
+                        <div id="text11">
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                 （983个区） The MSOA was created by the Office for National Statistics and used 
+                                 to explore the small areas of the city. It can make it easier for us to find 
+                                 problems in a smaller area. 
+                             </p>
+                             <br>
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                （983个区） The MSOA was created by the Office for National Statistics and used 
+                                to explore the small areas of the city. It can make it easier for us to find 
+                                problems in a smaller area. 
+                            </p>
+                        </div>
+                    </div>
+
+               </div>
+    
+        </div>
+    </div>
+</div>
+
+
+
+<!--第12屏-->
+<div class="section">
+    <div class="p12">
+        <div class="container">
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 id="Title12">Details of Cluster 0</h2>
+                    </div>
+                </div>
+    
+                <div class="row">
+
+
+
+
+                    <div class="col-md-7">
+                        <div class="row mt-3">
+                            <p id="cluster0name">Destribution of Cluster 0</p>
+                       </div>
+
+                       <div class="row">
+                            <div id="cluster0">
+                                 <img src="imgresult/cluster_0.png" alt="cluster">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 mt-5">
+                        <div id="text12">
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                 （983个区） The MSOA was created by the Office for National Statistics and used 
+                                 to explore the small areas of the city. It can make it easier for us to find 
+                                 problems in a smaller area. 
+                             </p>
+                             <br>
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                （983个区） The MSOA was created by the Office for National Statistics and used 
+                                to explore the small areas of the city. It can make it easier for us to find 
+                                problems in a smaller area. 
+                            </p>
+                        </div>
+                    </div>
+
+               </div>
+    
+        </div>
+    </div>
+</div>
+
+
+<!--第13屏-->
+<div class="section">
+    <div class="p13">
+        <div class="container">
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 id="Title13">Details of Cluster 1</h2>
+                    </div>
+                </div>
+    
+                <div class="row">
+
+
+
+
+                    <div class="col-md-7">
+                        <div class="row mt-3">
+                            <p id="cluster1name">Destribution of Cluster 1</p>
+                       </div>
+
+                       <div class="row">
+                            <div id="cluster1">
+                                 <img src="imgresult/cluster_1.png" alt="cluster">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 mt-5">
+                        <div id="text13">
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                 （983个区） The MSOA was created by the Office for National Statistics and used 
+                                 to explore the small areas of the city. It can make it easier for us to find 
+                                 problems in a smaller area. 
+                             </p>
+                             <br>
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                （983个区） The MSOA was created by the Office for National Statistics and used 
+                                to explore the small areas of the city. It can make it easier for us to find 
+                                problems in a smaller area. 
+                            </p>
+                        </div>
+                    </div>
+
+               </div>
+    
+        </div>
+    </div>
+</div>
+
+
+
+<!--第14屏-->
+<div class="section">
+    <div class="p14">
+        <div class="container">
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 id="Title14">Details of Cluster 2</h2>
+                    </div>
+                </div>
+    
+                <div class="row">
+
+
+
+
+                    <div class="col-md-7">
+                        <div class="row mt-3">
+                            <p id="cluster2name">Destribution of Cluster 2</p>
+                       </div>
+
+                       <div class="row">
+                            <div id="cluster2">
+                                 <img src="imgresult/cluster_2.png" alt="cluster">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 mt-5">
+                        <div id="text14">
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                 （983个区） The MSOA was created by the Office for National Statistics and used 
+                                 to explore the small areas of the city. It can make it easier for us to find 
+                                 problems in a smaller area. 
+                             </p>
+                             <br>
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                （983个区） The MSOA was created by the Office for National Statistics and used 
+                                to explore the small areas of the city. It can make it easier for us to find 
+                                problems in a smaller area. 
+                            </p>
+                        </div>
+                    </div>
+
+               </div>
+    
+        </div>
+    </div>
+</div>
+
+
+<!--第15屏-->
+<div class="section">
+    <div class="p15">
+        <div class="container">
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 id="Title15">Details of Cluster 3</h2>
+                    </div>
+                </div>
+    
+                <div class="row">
+
+
+
+
+                    <div class="col-md-7">
+                        <div class="row mt-3">
+                            <p id="cluster3name">Destribution of Cluster 3</p>
+                       </div>
+
+                       <div class="row">
+                            <div id="cluster3">
+                                 <img src="imgresult/cluster_3.png" alt="cluster">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 mt-5">
+                        <div id="text15">
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                 （983个区） The MSOA was created by the Office for National Statistics and used 
+                                 to explore the small areas of the city. It can make it easier for us to find 
+                                 problems in a smaller area. 
+                             </p>
+                             <br>
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                （983个区） The MSOA was created by the Office for National Statistics and used 
+                                to explore the small areas of the city. It can make it easier for us to find 
+                                problems in a smaller area. 
+                            </p>
+                        </div>
+                    </div>
+
+               </div>
+    
+        </div>
+    </div>
+</div>
+
+
+<!--第16屏-->
+<div class="section">
+    <div class="p16">
+        <div class="container">
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 id="Title16">Details of Cluster 4</h2>
+                    </div>
+                </div>
+    
+                <div class="row">
+
+
+
+
+                    <div class="col-md-7">
+                        <div class="row mt-3">
+                            <p id="cluster4name">Destribution of Cluster 4</p>
+                       </div>
+
+                       <div class="row">
+                            <div id="cluster4">
+                                 <img src="imgresult/cluster_4.png" alt="cluster">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 mt-5">
+                        <div id="text16">
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                 （983个区） The MSOA was created by the Office for National Statistics and used 
+                                 to explore the small areas of the city. It can make it easier for us to find 
+                                 problems in a smaller area. 
+                             </p>
+                             <br>
+                             <p>This research focused on the middle layer super output area(MSOA) of London. 
+                                （983个区） The MSOA was created by the Office for National Statistics and used 
+                                to explore the small areas of the city. It can make it easier for us to find 
+                                problems in a smaller area. 
+                            </p>
+                        </div>
+                    </div>
+
+               </div>
+    
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
