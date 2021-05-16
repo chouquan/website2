@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面</title>
+</head>
+
+<link href="../static/app.css" type="text/css" rel="stylesheet">
+<link href="static/index.css" type="text/css" rel="stylesheet">
+<script src="static/jquery-3.6.0.min.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet'/>
+
+<body>
+<div class="container">
+    <div class="panel">
+        <div>
+            <div class="info">
+                <div class="title">Choose a MSOA</div>
+                <div class="row">
+                    <label>MSOA name:</label>
+                    <div id="borough"></div>
+                </div>
+                <div class="row">
+                    <label>Cluster:</label>
+                    <div id="cluster"></div>
+                </div>
+                <div class="row">
+                    <label>Accidents number:</label>
+                    <div id="accidents_num"></div>
+                </div>
+                <div class="row">
+                    <label>Casualties number:</label>
+                    <div id="casualties_num"></div>
+                </div>
+                <div class="row">
+                    <label>Infrastructure number:</label>
+                    <div id="infra_num"></div>
+                </div>
+                <div class="row">
+                    <label>Ratio of cycle commuter:</label>
+                    <div id="origin_ratio"></div>
+                </div>
+            </div>
+            <div class="title">Cluster</div>
+            <div id="switchs" class="switchs"></div>
+            <div class="title2">Try another map？</div>
+        </div>
+    </div>
+    <div id='map'></div>
+</div>
+
+</body>
+<script src="static/index.js"></script>
+
+
+</html>

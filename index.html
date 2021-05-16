@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name='description' content='Homepage'>
+    <meta name='author' content='X-men'>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+
+    <!--Bootstrap_css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--bootstrap_js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--fullpage_css_js-->
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/myfullpagejs_story.js"></script>
+
+    <!-- loading animation_js -->
+    <link rel="stylesheet" href="css/loading.css">
+
+    <!-- Font animation_js -->
+    <script src="../js/anime.min.js"></script>
+
+    <!--mystyle_index-->
+    <link rel='stylesheet' type='text/css' href="css/style_index.css">
+
+</head>
+
+
+
+<body >
+
+      <!--Load page-loader-wrapper -->
+      <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        <div id="load_title">Loading</div>
+      </div>
+
+      <!--Load page-script -->
+      <script type="text/javascript">
+        window.onload = function () {
+            document.body.className += ' loaded';
+        }
+      </script>
+
+  
+  
+  <!--fullpage_page1-->
+  <div id='fullpage'>
+       <div class="section">
+
+            <!--bootstrap_container-->
+            <div class="container">
+
+              <!--the first row_title-->
+              <div class="row">
+                <div class="col-md-12 mb-5">
+                    <h1 class="ml6">
+                        <span class="text-wrapper">
+                             <span class="letters">Let's cycling safely in London !</span>
+                        </span>
+                    </h1>
+                </div>
+              </div>
+
+              <!--the second row_button-->
+              <div class="row">
+
+                <!--the second row_the first column-->
+                <div class="col-md-3"></div>
+                
+                <!--the second row_the second column-->
+                <div class="col-md-2">
+                  <div class="row ml-3">
+                    <button class="btn btn--stripe" onclick="navigatePage('story')" style="font-size:22px">Story</button>
+                  </div>
+
+                  <div class="row">
+                    <img src="imgpart1/bike.gif" width="250px" style="margin-left: -50px"/>
+                  </div>
+                </div>
+
+                <!--the second row_the third column-->
+                <div class="col-md-2">
+                  <div class="row ml-3">
+                    <button class="btn btn--stripe" onclick="navigatePage('map')" style="font-size:22px">&nbsp; Map &nbsp; </button>
+                  </div>
+
+                  <div class="row">
+                    <img src="imgpart1/bike.gif" width="250px" style="margin-left: -50px"/>
+                  </div>
+                </div>
+
+                <!--the second row_the fourth column-->
+                <div class="col-md-2">
+                  <div class="row ml-3">
+                    <button class="btn btn--stripe" onclick="navigatePage('bootstrap_team')" style="font-size:22px">&nbsp;Team </button>
+                  </div>
+
+                  <div class="row">
+                    <img src="imgpart1/bike.gif" width="250px" style="margin-left: -50px"/>
+
+                  </div>
+                </div>
+
+                <!--the second row_the fifth column-->
+                <div class="col-md-3"></div>
+
+              </div>
+
+              <!--the third row-->
+              <div class="row">
+                <p></p>
+              </div>
+              <!--the fourth row-->
+              <div class="row">
+                <p></p>
+              </div>
+  
+              </div>
+            </div>
+        </div>
+  </div>
+
+
+
+
+<!-- Font animation -->
+<script>
+          var textWrapper = document.querySelector('.ml6 .letters');
+          textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+          anime.timeline({loop: true})
+          .add({
+            targets: '.ml6 .letter',
+            translateY: ["1.1em", 0],
+            translateZ: 0,
+            duration: 750,
+            delay: (el, i) => 50 * i
+          }).add({
+            targets: '.ml6',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+          });
+          function navigatePage(label){
+            if(label == 'story'){
+              window.location.href = './bootstrap_story.html';
+            } else if(label == 'map'){
+              window.location.href = './map.html';
+            } else{
+              window.location.href = './bootstrap_team.html';
+            }
+          }
+</script>
+    
+</body>
+</html>

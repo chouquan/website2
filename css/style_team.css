@@ -1,0 +1,169 @@
+/*default setting*/
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+    a {
+    text-decoration:none;
+}
+
+    li{
+    list-style:none;
+}
+
+    em,i{
+    font-style:normal;
+}
+
+    #fullpage .section{
+    background-size:cover;
+}
+
+
+
+    /*Set the second screen background*/
+    #fullpage .section:nth-child(2){
+    background:url(../imgpart1/background_team.png) no-repeat;
+    height:100%;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+
+}
+
+    /*Set the title style of the first page*/
+    .container .row h1 {
+        font-size: 80px;
+        font-family: "Arial";
+        color: #7EC8BC;
+        text-align: center; 
+        margin-top:5%;
+        background-color:#ffffff;
+        
+}
+
+
+    /*Set paragraph style*/
+    #description1 {
+        font-size: 20px;
+        font-family: "Arial";
+        color: #ffffff;
+        margin-top:10%;
+        text-align: justify;
+}
+
+    /*Set the title style of the second page*/
+    .container .row h3 {
+        font-size: 45px;
+        font-family:"Bradley Hand ITC";
+        color: #46B29A;
+        text-align: center; 
+        font-weight:bold;
+        font-style: italic;
+        
+}
+
+    /*Picture size setting*/
+    #imgyj img,#imgzq img,#imghs img,#imgzj img,#imgzqf img {
+        height:250px;
+        
+       }
+
+
+    /*Name style settings*/
+    #nameyj p,#namezq p,#namehs p,#namezj p,#namezqf p {
+        font-size: 18px;
+        font-family: "Arial";
+        color: #46B29A;
+        text-align: right;
+        
+}
+
+
+    /*Navigation settings*/
+    #menu {
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+    z-index:1000;
+
+}
+
+    #menu li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size:20px;
+
+}
+
+    #menu li a {
+    display:block;
+    width:100px;
+    height:40px;
+    text-align:center;
+    line-height:30px;
+    color:rgba(255,255,255,0.7);
+    font-style:italic;
+
+}
+
+    ul{list-style:none;}
+    #a1,#a2,#a3,#a4 {
+            display:block;
+            width:30px;
+            height:40px;
+            background:#46B29A;
+            margin-top:0px;
+            text-decoration:none;
+            line-height:40px;
+            position:relative;
+            font-size: 18px;
+            color:rgba(255,255,255,0.7);
+            font-style:italic;
+
+        }
+    #A1,#A2,#A3,#A4 {
+            width:0;
+            height:40px;
+            display:block;
+            font-weight:bold;
+            position:absolute;
+            left:30px;
+            transition:all 0.3s;
+        }
+
+    #A1,#A2,#A3,#A4 {background:#F6A09F;}
+    ul li a:hover #A1 {visibility:visible; width:auto; padding:0 20px;}
+    ul li a:hover #A2 {visibility:visible; width:auto; padding:0 20px;}
+    ul li a:hover #A3 {visibility:visible; width:auto; padding:0 20px;}
+    ul li a:hover #A4 {visibility:visible; width:auto; padding:0 20px;}
+
+
+    /*Color of small dots on the right*/
+    #fp-nav ul li a span {
+    background:#ffffff;
+}
+
+
+
+
+/*Hyperlink color*/
+a:link {
+color:#46B29A;
+text-decoration:none;
+}
+a:visited {
+color:#46B29A;
+text-decoration:none;
+}
+a:hover {
+color:#ffffff;
+text-decoration:none;
+}
+a:active {
+color:#ffffff;
+text-decoration:none;
+}

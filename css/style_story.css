@@ -1,0 +1,453 @@
+/*Set the background of the first page*/
+#fullpage .section:nth-child(1){
+    background:url(../imgpart1/background_team.png) no-repeat;
+    height:100%;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+
+}
+
+    /*Set the second page background*/
+    #fullpage .section:nth-child(2){
+    background:url(../imgpart1/background_team.png) no-repeat;
+    height:100%;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+
+}
+
+
+    /*Set the title style of the first page*/
+    .container .row h1 {
+        font-size: 45px;
+        font-family:"Bradley Hand ITC";
+        color: #46B29A;
+        text-align: center; 
+        font-weight: bold;
+        font-style: italic;    
+}
+
+    /*Set heading style*/
+    .container .row h2 {
+        font-size: 45px;
+        font-family:"Arial";
+        color: #ffffff;
+        text-align: center; 
+        margin-top:5%;
+        font-weight:bold;
+        
+}
+
+    .container .row h3 {
+        font-size: 30px;
+        font-family:"Arial";
+        color: #81CDBD;
+        text-align: center; 
+        font-style: italic;
+        margin-bottom: 50px;
+    }
+
+    #Title9_2 {
+        font-size: 30px;
+        font-family:"Arial";
+        color: #ffffff;
+        text-align: center; 
+        font-style: italic;
+    }
+
+
+    #Title12, #Title13, #Title14, #Title15, #Title16 {
+        font-size: 45px;
+        font-family:"Arial";
+        color: #64B09B;
+        text-align: center; 
+        margin-top:5%;
+        font-weight:bold;
+
+    }
+    
+
+    /*Set paragraph style*/
+    #question1 p,#question2 p,#question3 p {
+    font-size: 22px;
+    font-family: "Futura, sans-serif";
+    color: #595959;
+    font-style:italic;
+
+}
+
+    #letsgo p {
+    font-size: 40px;
+    font-family: "Bradley Hand ITC";
+    color: #46B29A;
+    font-weight: bold;
+    font-style: italic;   
+}
+
+
+    #description1_1 p{
+    font-size: 20px;
+    font-family: "Futura, sans-serif";
+    color: #595959;
+    text-align:justify;
+
+    }
+
+
+    .text2 p{
+    font-size: 20px;
+    text-align:justify;
+    color: #595959;
+    font-family:"Futura, sans-serif";
+
+    }
+
+    .text3 p{
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+
+    }
+
+    #text3, #text4 {
+
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+    width:500px;
+    } 
+
+    #text4_1 {
+
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+
+    }
+
+    #text5,#text12,#text13,#text14,#text15, #text16  {
+    font-size: 20px;
+    text-align:justify;
+    color: #595959;
+    font-family:"Futura, sans-serif";
+} 
+
+    #text6,#text9,#text11 {
+
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+
+} 
+
+    #text7 {
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+    margin-top:5%;
+
+    }
+
+    #text10 {
+
+    font-size: 20px;
+    text-align:justify;
+    color: #ffffff;
+    font-family:"Futura, sans-serif";
+    margin-top:3%;
+
+} 
+
+    
+    #picture1name {
+    font-size: 13px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:25%;
+        
+    }
+
+    #picture2name {
+    font-size: 15px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:25%;
+        
+    }
+
+    #picture3name {
+    font-size: 15px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:30%;
+        
+    }
+
+    #picture4name {
+    font-size: 15px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:30%;
+        
+    }
+
+    #picture5name {
+    font-size: 15px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:35%;
+        
+    }
+
+    #cluster0name, #cluster1name, #cluster2name, #cluster3name, #cluster4name {
+    font-size: 15px;
+    text-align:justify;
+    color: #5A5A5A;
+    font-family:"Futura";
+    margin-left:15%;
+        
+    }
+
+    #text81,#text82 {
+
+    font-size: 40px;
+    color: #81CDBD;
+    font-family:"Arial";
+    font-style: bold;
+    margin-top:5px;
+    font-style: italic;
+
+} 
+
+    #accident,#signal,#distribution,#policy {
+    font-size: 18px;
+    text-align:center;
+    color: #333;
+    font-family:"Futura, sans-serif";
+}
+
+    .p2 .row h2,.p4 .row h2,.p5 .row h2,.p8 .row h2,.p7 .row h2,.p10 .row h2{
+        color: #64b09b;
+    }
+
+    .p2 .text2{
+        color: #333333;
+        font-size: 25px;
+        text-align:justify;
+        font-family:"Futura, sans-serif";
+        width:600px;
+        margin-left:10%;
+    }
+
+    .p2 .title2,.p3 .title3{
+        margin-bottom: 40px;
+    } 
+
+
+    .imgRow{
+        margin-bottom: 60px;
+    }
+    .texBox{
+        text-align: center;
+        color: #333333;
+    }
+    #text7,#text10{
+        color: #333333;
+    }
+
+
+    /*Picture size setting*/
+
+    #NHS img{
+        height:400px;
+
+    }
+
+    #three-people img {
+        height:200px;
+
+    }
+
+    #MSOA img {
+        height:500px;
+        float:left;
+
+    }
+
+    #method img {
+        height:500px;
+        float:left;
+
+    }
+
+    #picture1 img, #picture3 img {
+        width: 480px;
+
+    }
+
+    #signal1 img,#signal2 img, #signal3 img, #signal4 img,
+    #signal5 img,#signal6 img, #signal7 img, #signal8 img {
+        height:200px;
+    }
+
+    #namesignal1 p,#namesignal2 p, #namesignal3 p, #namesignal4 p,
+    #namesignal5 p,#namesignal6 p, #namesignal7 p, #namesignal8 p {
+        font-size: 20px;
+        color: #333;
+        font-family:"Futura, sans-serif";
+        text-align: center;
+    }
+    #namesignal1,#namesignal2, #namesignal3, #namesignal4,
+    #namesignal5,#namesignal6, #namesignal7, #namesignal8{
+        width: 100%;
+    }
+    .p8 .imgBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #casualties_auto img {
+        width: 100%;
+
+    }
+
+    #Correlation_Matrix img {
+        width:100%;
+
+    }
+
+    #cluster img, #cluster0 img, #cluster1 img, #cluster2 img, #cluster3 img, #cluster4 img  {
+        width:90%;
+
+    }
+
+    #cluster_detail1 img, #cluster_detail2 img, #cluster_detail3 img {
+        width:100%;
+        margin-top:2%;
+        margin-bottom: 3%;
+
+    }
+
+
+    
+/*default setting*/
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+a {
+    text-decoration:none;
+}
+
+li{
+    list-style:none;
+}
+
+em,i{
+    font-style:normal;
+}
+
+#fullpage .section{
+    background-size:cover;
+}
+
+
+
+/*Color of small dots on the right*/
+#fp-nav ul li a span {
+    background:#ffffff;
+}
+
+
+/*Hyperlink color*/
+a:link {
+color:#46B29A;
+text-decoration:none;
+}
+a:visited {
+color:#46B29A;
+text-decoration:none;
+}
+a:hover {
+color:#ffffff;
+text-decoration:none;
+}
+a:active {
+color:#000000;
+text-decoration:none;
+}
+
+
+/*navigation setting*/
+#menu {
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+    z-index:1000;
+
+}
+
+#menu li {
+    margin-bottom: 10px;
+    font-size:20px;
+
+}
+
+#menu li a {
+    display:block;
+    width:100px;
+    height:40px;
+    text-align:center;
+    line-height:30px;
+    color:rgba(255,255,255,0.7);
+    font-style:italic;
+
+}
+
+ul{list-style:none;}
+#a1,#a2,#a3,#a4 {
+            display:block;
+            width:30px;
+            height:40px;
+            background:#46B29A;
+            margin-top:0px;
+            text-decoration:none;
+            line-height:40px;
+            position:relative;
+            font-size: 18px;
+            color:rgba(255,255,255,0.7);
+            font-style:italic;
+
+        }
+#A1,#A2,#A3,#A4 {
+            width:0;
+            height:40px;
+            display:block;
+            font-weight:bold;
+            position:absolute;
+            left:30px;
+            transition:all 0.3s;
+        }
+
+#A1,#A2,#A3,#A4 {background:#F6A09F;}
+ul li a:hover #A1 {visibility:visible; width:auto; padding:0 20px;}
+ul li a:hover #A2 {visibility:visible; width:auto; padding:0 20px;}
+ul li a:hover #A3 {visibility:visible; width:auto; padding:0 20px;}
+ul li a:hover #A4 {visibility:visible; width:auto; padding:0 20px;}

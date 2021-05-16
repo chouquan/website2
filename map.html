@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+</style>
+<link href="static/app.css" type="text/css" rel="stylesheet">
+<script src="static/jquery-3.6.0.min.js"></script>
+<body>
+<div class="page-container">
+    <div class="tab-wrapper">
+        <ul class="menu">
+            <li><a href="./index.html" class="a1"><span>Home</span></a></li>
+            <li><a href="bootstrap_story.html" class="a2"><span>Story</span></a></li>
+            <li><a href="./map.html" class="a3"><span>Map</span></a></li>
+            <li><a href="./bootstrap_team.html" class="a4"><span>Team</span></a></li>
+        </ul>
+        <style>
+            ul{list-style:none;}
+            ul li{
+                float: left;
+            }
+            a{
+                float: left;
+                display:block;
+                width:73px;
+                height:40px;
+                background:#46B29A;
+                margin-top:0px;
+                text-decoration:none;
+                line-height:40px;
+                position:relative;
+                font-size: 18px;
+                color:rgba(255,255,255,0.7);
+                font-style:italic;
+            }
+            ul li a span{
+                width:0;
+                height:40px;
+                display:block;
+                font-weight:bold;
+                position:absolute;
+                left:0px;
+                transition:all 0.3s;
+            }
+            ul li .a1 span{background:rgb(30,139,180);}
+            ul li .a2 span{background:rgb(30,139,180);}
+            ul li .a3 span{background:rgb(30,139,180);}
+            ul li .a4 span{background:rgb(30,139,180);}
+            ul li a:hover span{visibility:visible; width:auto; padding:0 20px;}
+        </style>
+        <div class="tab " data-url="infrastructure/index.html">Infrastructure</div>
+        <div class="tab selected" data-url="cluster/index.html">Cluster</div>
+    </div>
+    <iframe id="iframe" class="iframe" src="cluster/index.html"></iframe>
+</div>
+<script>
+    $(function () {
+        $('.tab').click(function () {
+            $('.tab').removeClass('selected')
+            const $this = $(this)
+            $this.addClass('selected')
+            const url = $this.attr('data-url')
+            $('#iframe').attr('src', url)
+        })
+    })
+
+</script>
+</body>
+</html>
