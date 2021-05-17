@@ -152,16 +152,17 @@
 }
  
 #loader-wrapper #load_title {
-    font-family: 'Open Sans';
+    font-family: 'Arial';
     color: #FFF;
-    font-size: 19px;
+    font-size: 20px;
     width: 100%;
     text-align: center;
     z-index: 9999999999999;
     position: absolute;
     top: 60%;
     opacity: 1;
-    line-height: 30px
+    line-height: 30px;
+    
 }
  
 #loader-wrapper #load_title span {

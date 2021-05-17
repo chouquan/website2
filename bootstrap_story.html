@@ -46,7 +46,7 @@
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-        <div id="load_title">Loading</div>
+        <div id="load_title">Loading, waiting please.</div>
     </div>
 
     <!--loading page js-->
@@ -688,22 +688,22 @@
                 <!--the thrid row-->
                 <div class="row title3">
                      <div class="col-md-6">
-                         <p id="text7">我需要替换.我需要替换.我需要替换.我需要替换.我需要替换.我需要替换.我需要替换.我需要替换.
-                         （983个区） The MSOA was created by the Office for National Statistics and used to explore 
-                          the small areas of the city. It can make it easier for us to find problems in a smaller area.
-                         </p>]
+                         <p id="text7">Using original cycling accident data to perform spatial autocorrelation analysis
+                              to observe the relationship between the number of casualties and geographic location. 
+                              According to the number of Moran I equals to 0.56, it can be seen that there is a positive 
+                              spatial autocorrelation between the number of casualties in each MSOAs and their locations, 
+                              in order to detect where the clusters are, Local Indicators of Spatial Association (LISA) is used,
+                               which classifies areas into five groups.</p>
 
-                         <br>
-
-                          <p id="text7">我需要替换.我需要替换.我需要替换.我需要替换.我需要替换.It can make it easier for us to find problems in a smaller area.
-                         The data we used include：cycling infrastructures data (Transport for London), cycling accidents 
-                         data (Department for Transport), the proportion of cycling to work (XXX).
-                         </p>
+                          <p id="text7">The red colors indicate neighborhoods clustered together, which have large number of 
+                              casualties surrounded by large number of casualties as well, is mostly clustered in the center
+                               of the city. The blue areas indicate where the number of casualties is small, also surrounded 
+                               by areas with small casualty number, which is mostly in the peripheries.</p>
                     </div>
 
                     <div class="col-md-6">
                         <div class="row">
-                             <p id="picture2name">Casulties of Bicycle Accident in London</p>
+                             <p id="picture2name">LISA Cluster Map of Casualties (p < 0.05)</p>
                         </div>
 
                         <div class="row pb-5">
@@ -948,16 +948,13 @@
                 <div class="row">
 
                      <div class="col-md-6 mt-5">
-                            <p id="text10">我需要替换This research fo我需要替换cused on the middl我需要替换e layer sup我需要替换er output area(MSOA) of London.
-                             （983个区） The MSOA was created by the Office f我需要替换or Nationa我需要替换l Statistics and used to explore 
-                             the small areas of我需要替换 the city.
+                            <p id="text10">To ensure the quality of the cluster analysis, variables that were highly correlated or had little impact on the results were removed.
+                                Firstly, we tried to detect multicollinearity by variance inflation factors (VIF) and correlation matrix. The threshold of VIF was set to 5.
+                                The results showed that most of the variables were not highly correlated and none of them was removed considering the VIF.
+                                Then the number of restricted points and routes were removed from the variables since they did not make a big difference to the clustering results and were not very pertinent to cycling safety. After the selection, there were 9 variables used in the clustering analysis.
                              </p>
-
                             <br>
-
-                             <p id="text10">This re我需要替换search focused on the 我需要替换middle layer super output area(MSOA) of London.
-                             （983个区） The MSOA was我需要替换 created by the Office fo我需要替换r National Statistics and used to explore 
-                             the small areas 我需要替换of the city.
+                             <p id="text10">After the selection, there were 9 variables used in the clustering analysis.
                              </p>
                     </div>
 
@@ -1013,17 +1010,13 @@
 
                     <div class="col-md-5 mt-5">
                         <div id="text11">
-                             <p>我需要替换我需要替换This research focused on the middle layer super output area(MSOA) of London. 
-                                 （983个区） The MSOA was我需要替换我需要替换ce for National Statistics and used 
-                                 to explore the small areas of the city. It can make it easier for us to find 
-                                 problems in a smaller area. 
+                             <p>We tried different clustering methods including k-means and hierarchical clustering, both of which require a specified clusters number k. The elbow method and silhouette scores were used to find the ideal k for the analysis.
+                                 Based on the results, we selected 5 as the number of clusters in analysis
                              </p>
                              <br>
-                             <p>This research focus我需要替换我需要替换yer super output area(MSOA) of London. 
-                                （983个区） The MSOA was c我需要替换我需要替换onal Statistics and used 
-                                to explore the small areas of the city. I我需要替换我需要替换 us to find 
-                                problems in a smaller area. 
-                            </p>
+                             <p>Based on the selected 9 variables and 5 clusters, k-means and hierarchical clustering were carried out. The combination of data process that best differentiated the cycling safety profiles of MSOAs in London is listed as follows:Log-transformation,Min-Max standardization,K-means clustering.
+
+                             </p>
                         </div>
                     </div>
                </div>
@@ -1288,7 +1281,7 @@
             </div>
         </div>
     </div>
-
+    </div>
 </body>
 
 </html>

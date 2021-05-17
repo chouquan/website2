@@ -9,7 +9,33 @@
 </style>
 <link href="static/app.css" type="text/css" rel="stylesheet">
 <script src="static/jquery-3.6.0.min.js"></script>
+<script src="infrastructure/static/index.js"></script>
+<script src="cluster/static/index.js"></script>
+
+<!-- loading animation_js -->
+<link rel="stylesheet" href="css/loading.css">
+
+
 <body>
+
+<!--Load page-loader-wrapper -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    <div id="load_title">Loading, waiting please.</div>
+</div>
+
+<!--Load page-script -->
+<script type="text/javascript">
+        window.onload = function () {
+        document.body.className += ' loaded';
+        }
+</script>
+
+    
+
+
 <div class="page-container">
     <div class="tab-wrapper">
         <ul class="menu">
@@ -46,10 +72,10 @@
                 left:0px;
                 transition:all 0.3s;
             }
-            ul li .a1 span{background:rgb(30,139,180);}
-            ul li .a2 span{background:rgb(30,139,180);}
-            ul li .a3 span{background:rgb(30,139,180);}
-            ul li .a4 span{background:rgb(30,139,180);}
+            ul li .a1 span{background:#F6A09F;}
+            ul li .a2 span{background:#F6A09F;}
+            ul li .a3 span{background:#F6A09F;}
+            ul li .a4 span{background:#F6A09F;}
             ul li a:hover span{visibility:visible; width:auto; padding:0 20px;}
         </style>
         <div class="tab " data-url="infrastructure/index.html">Infrastructure</div>
